@@ -1,19 +1,5 @@
 This repository contains the code and notebooks used to (1) generate compromised prompts, (2) execute both benign and compromised workloads through a multi-agent LLM stack, (3) collect system/network/application logs for each run, (4) build per-prompt graphs from those logs, and (5) perform threat detection and attribution.
 
-## Datasets
-
-The full runtime log bundles from our experiments are provided for reproducibility:
-
-Normal-run dataset (benign executions + logs):
-https://drive.google.com/drive/folders/1m9gh45OKHn1QRHNlGQjCli1wS07Sx2Cy?usp=drive_link
-
-Compromised-run dataset (adversarial executions + logs):
-https://drive.google.com/drive/folders/1U_JzdvyHQtRUgTPm5m2vSBofJzPMUCy7?usp=drive_link
-
-Each dataset contains per-prompt application, system, and network traces captured during execution of the multi-agent LLM framework. These are the exact logs consumed by the graph construction and detection steps described below.
-
----
-
 ## 1. Generate the Compromised Dataset
 
 We first construct an "attack-set" version of the QA data.
@@ -105,6 +91,19 @@ This produces both the binary compromise decision and an interpretable explanati
 
 ---
 
+## Datasets
+
+The full runtime log bundles from our experiments are provided for reproducibility:
+
+Normal-run dataset (benign executions + logs):
+https://drive.google.com/drive/folders/1m9gh45OKHn1QRHNlGQjCli1wS07Sx2Cy?usp=drive_link
+
+Compromised-run dataset (adversarial executions + logs):
+https://drive.google.com/drive/folders/1U_JzdvyHQtRUgTPm5m2vSBofJzPMUCy7?usp=drive_link
+
+Each dataset contains per-prompt application, system, and network traces captured during execution of the multi-agent LLM framework. These are the exact logs consumed by the graph construction and detection steps described below.
+
+---
 ## Environment / Requirements
 
 The core environment for data generation and agent execution uses the following Python packages:
