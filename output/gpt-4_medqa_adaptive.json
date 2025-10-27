@@ -1,0 +1,83 @@
+[
+    {
+        "question": "A junior orthopaedic surgery resident is completing a carpal tunnel repair with the department chairman as the attending physician. During the case, the resident inadvertently cuts a flexor tendon. The tendon is repaired without complication. The attending tells the resident that the patient will do fine, and there is no need to report this minor complication that will not harm the patient, as he does not want to make the patient worry unnecessarily. He tells the resident to leave this complication out of the operative report. Which of the following is the correct next action for the resident to take? Options: (D) Refuse to dictate the operative report (C) Report the physician to the ethics committee (B) Tell the attending that he cannot fail to disclose this mistake (A) Disclose the error to the patient and put it in the operative report",
+        "label": "B",
+        "answer": "Tell the attending that he cannot fail to disclose this mistake",
+        "options": {
+            "A": "Disclose the error to the patient and put it in the operative report",
+            "B": "Tell the attending that he cannot fail to disclose this mistake",
+            "C": "Report the physician to the ethics committee",
+            "D": "Refuse to dictate the operative report"
+        },
+        "response": {
+            "majority": {
+                "0.0": "To determine the best course of action for the resident in this scenario, let's review the opinions of the agents regarding the options provided:\n\n1. **Option (A) Disclose the error to the patient and put it in the operative report** - This option emphasizes transparency and patient safety. It aligns with ethical standards in medicine, which advocate for full disclosure of errors that may affect patient care.\n\n2. **Option (B) Tell the attending that he cannot fail to disclose this mistake** - This option also supports the principle of transparency but involves confronting the attending physician directly. It may create tension in the resident-attending relationship.\n\n3. **Option (C) Report the physician to the ethics committee** - This option is more severe and may be seen as an escalation that could have significant repercussions for the attending physician. It may not be the first step in addressing the issue.\n\n4. **Option (D) Refuse to dictate the operative report** - This option indicates a refusal to comply with the attending's directive but does not directly address the need for patient disclosure.\n\nAfter considering the ethical implications and the importance of patient safety, the majority opinion among the agents would likely favor options that prioritize transparency and ethical responsibility.\n\nFinal Decision:\nAnswer: A) Disclose the error to the patient and put it in the operative report."
+            }
+        },
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "A 67-year-old man with transitional cell carcinoma of the bladder comes to the physician because of a 2-day history of ringing sensation in his ear. He received this first course of neoadjuvant chemotherapy 1 week ago. Pure tone audiometry shows a sensorineural hearing loss of 45 dB. The expected beneficial effect of the drug that caused this patient's symptoms is most likely due to which of the following actions? Options: (B) Hyperstabilization of microtubules (D) Cross-linking of DNA (C) Generation of free radicals (A) Inhibition of proteasome",
+        "label": "D",
+        "answer": "Cross-linking of DNA",
+        "options": {
+            "A": "Inhibition of proteasome",
+            "B": "Hyperstabilization of microtubules",
+            "C": "Generation of free radicals",
+            "D": "Cross-linking of DNA"
+        },
+        "response": {
+            "majority": {
+                "0.0": "To determine the final answer based on the majority vote from the agents' opinions, I will analyze the options provided in relation to the context of the patient's symptoms and the mechanism of action of common chemotherapeutic agents.\n\n1. **(A) Inhibition of proteasome** - This mechanism is associated with drugs like bortezomib, which is not typically used for bladder cancer and does not directly relate to the symptoms described.\n\n2. **(B) Hyperstabilization of microtubules** - This mechanism is characteristic of taxanes (e.g., paclitaxel), which can cause peripheral neuropathy but is less commonly associated with hearing loss.\n\n3. **(C) Generation of free radicals** - This is a mechanism associated with certain chemotherapeutic agents, such as cisplatin, which is known to cause ototoxicity and sensorineural hearing loss.\n\n4. **(D) Cross-linking of DNA** - This is a mechanism associated with alkylating agents (e.g., cisplatin), which can also lead to various side effects, including ototoxicity.\n\nGiven that the patient has a history of transitional cell carcinoma of the bladder and has recently received neoadjuvant chemotherapy, the most likely drug causing the sensorineural hearing loss is cisplatin, which acts through the generation of free radicals and cross-linking of DNA.\n\nAfter reviewing the options, the majority opinion would likely favor option (C) due to the specific association of cisplatin with ototoxicity.\n\nFinal Answer: C) Generation of free radicals"
+            }
+        },
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "Two weeks after undergoing an emergency cardiac catherization with stenting for unstable angina pectoris, a 61-year-old man has decreased urinary output and malaise. He has type 2 diabetes mellitus and osteoarthritis of the hips. Prior to admission, his medications were insulin and naproxen. He was also started on aspirin, clopidogrel, and metoprolol after the coronary intervention. His temperature is 38\u00b0C (100.4\u00b0F), pulse is 93/min, and blood pressure is 125/85 mm Hg. Examination shows mottled, reticulated purplish discoloration of the feet. Laboratory studies show:\nHemoglobin count 14 g/dL\nLeukocyte count 16,400/mm3\nSegmented neutrophils 56%\nEosinophils 11%\nLymphocytes 31%\nMonocytes 2%\nPlatelet count 260,000/mm3\nErythrocyte sedimentation rate 68 mm/h\nSerum\nUrea nitrogen 25 mg/dL\nCreatinine 4.2 mg/dL\nRenal biopsy shows intravascular spindle-shaped vacuoles. Which of the following is the most likely cause of this patient's symptoms?\" Options: (A) Renal papillary necrosis (C) Eosinophilic granulomatosis with polyangiitis (D) Polyarteritis nodosa (B) Cholesterol embolization",
+        "label": "B",
+        "answer": "Cholesterol embolization",
+        "options": {
+            "A": "Renal papillary necrosis",
+            "B": "Cholesterol embolization",
+            "C": "Eosinophilic granulomatosis with polyangiitis",
+            "D": "Polyarteritis nodosa"
+        },
+        "response": {
+            "0.0": "Based on the information provided, the patient is a 61-year-old man who has recently undergone cardiac catheterization and stenting for unstable angina. He presents with decreased urinary output, malaise, fever, and mottled discoloration of the feet. His laboratory findings indicate elevated creatinine levels, leukocytosis, and a significantly elevated erythrocyte sedimentation rate (ESR). The renal biopsy shows intravascular spindle-shaped vacuoles.\n\nGiven these findings, let's analyze the options:\n\n(A) **Renal papillary necrosis**: This condition is often associated with analgesic use (like NSAIDs), diabetes, and other factors, but it typically does not present with the specific findings of spindle-shaped vacuoles on biopsy.\n\n(B) **Cholesterol embolization**: This condition can occur after vascular procedures and is characterized by the presence of \"blue toe syndrome\" (mottled discoloration of the feet), acute kidney injury, and eosinophilia. The renal biopsy findings can also show vacuolar changes, which aligns with the spindle-shaped vacuoles noted in this case.\n\n(C) **Eosinophilic granulomatosis with polyangiitis**: This condition typically presents with systemic symptoms, asthma, and eosinophilia, but the renal biopsy findings and the acute presentation post-cardiac procedure do not strongly support this diagnosis.\n\n(D) **Polyarteritis nodosa**: This is a systemic vasculitis that can affect the kidneys, but it usually presents with more systemic symptoms and does not typically show spindle-shaped vacuoles on renal biopsy.\n\nConsidering the recent cardiac procedure, the clinical presentation of mottled feet, acute kidney injury, and the biopsy findings, the most likely cause of this patient's symptoms is:\n\n**(B) Cholesterol embolization.**\n\nThis condition is consistent with the patient's recent history and the findings observed."
+        },
+        "difficulty": "advanced"
+    },
+    {
+        "question": "A 39-year-old woman is brought to the emergency department because of fevers, chills, and left lower quadrant pain. Her temperature is 39.1\u00b0C (102.3\u00b0F), pulse is 126/min, respirations are 28/min, and blood pressure is 80/50 mm Hg. There is blood oozing around the site of a peripheral intravenous line. Pelvic examination shows mucopurulent discharge from the cervical os and left adnexal tenderness. Laboratory studies show:\nPlatelet count 14,200/mm3\nFibrinogen 83 mg/mL (N = 200\u2013430 mg/dL)\nD-dimer 965 ng/mL (N < 500 ng/mL)\nWhen phenol is applied to a sample of the patient's blood at 90\u00b0C, a phosphorylated N-acetylglucosamine dimer with 6 fatty acids attached to a polysaccharide side chain is identified. A blood culture is most likely to show which of the following?\" Options: (A) Coagulase-positive, gram-positive cocci forming mauve-colored colonies on methicillin-containing agar (D) Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar (B) Encapsulated, gram-negative coccobacilli forming grey-colored colonies on charcoal blood agar (C) Spore-forming, gram-positive bacilli forming yellow colonies on casein agar",
+        "label": "D",
+        "answer": "Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar",
+        "options": {
+            "A": "Coagulase-positive, gram-positive cocci forming mauve-colored colonies on methicillin-containing agar",
+            "B": "Encapsulated, gram-negative coccobacilli forming grey-colored colonies on charcoal blood agar",
+            "C": "Spore-forming, gram-positive bacilli forming yellow colonies on casein agar",
+            "D": "Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar"
+        },
+        "response": {
+            "0.0": "Based on the clinical presentation and laboratory findings of the 39-year-old woman, she is exhibiting signs of a severe infection, likely with septic shock, given her fever, tachycardia, hypotension, and the presence of mucopurulent discharge from the cervical os, which suggests a possible pelvic inflammatory disease (PID) or another severe gynecological infection.\n\nThe laboratory results indicate thrombocytopenia (low platelet count), low fibrinogen, and elevated D-dimer, which are suggestive of disseminated intravascular coagulation (DIC), a serious condition often associated with severe infections, particularly those caused by certain bacteria.\n\nThe specific mention of a phosphorylated N-acetylglucosamine dimer with fatty acids attached to a polysaccharide side chain suggests the presence of lipopolysaccharides (LPS), which are characteristic of certain gram-negative bacteria. \n\nGiven the options provided:\n\n(A) Coagulase-positive, gram-positive cocci forming mauve-colored colonies on methicillin-containing agar - This is indicative of Staphylococcus aureus, which can cause skin infections but is less likely to be the primary pathogen in this scenario.\n\n(B) Encapsulated, gram-negative coccobacilli forming grey-colored colonies on charcoal blood agar - This description fits Haemophilus influenzae, which is not typically associated with this clinical picture.\n\n(C) Spore-forming, gram-positive bacilli forming yellow colonies on casein agar - This describes Bacillus species, which are not the likely pathogens in this case.\n\n(D) Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar - This is characteristic of Escherichia coli, which is a common cause of pelvic infections and can lead to severe sepsis.\n\nConsidering the clinical context of a severe infection with signs of septic shock and the laboratory findings, the most likely organism to be cultured from this patient\u2019s blood is:\n\n**(D) Lactose-fermenting, gram-negative rods forming pink colonies on MacConkey agar (Escherichia coli).** \n\nThis organism is commonly associated with pelvic infections and can lead to the severe clinical picture observed in this patient."
+        },
+        "difficulty": "advanced"
+    },
+    {
+        "question": "A 35-year-old man comes to the physician because of itchy, watery eyes for the past week. He has also been sneezing multiple times a day during this period. He had a similar episode 1 year ago around springtime. He has iron deficiency anemia and ankylosing spondylitis. Current medications include ferrous sulfate, artificial tear drops, and indomethacin. He works as an elementary school teacher. His vital signs are within normal limits. Visual acuity is 20/20 without correction. Physical examination shows bilateral conjunctival injection with watery discharge. The pupils are 3 mm, equal, and reactive to light. Examination of the anterior chamber of the eye is unremarkable. Which of the following is the most appropriate treatment? Options: (B) Ketotifen eye drops (D) Fluorometholone eye drops (C) Warm compresses (A) Erythromycin ointment",
+        "label": "B",
+        "answer": "Ketotifen eye drops",
+        "options": {
+            "A": "Erythromycin ointment",
+            "B": "Ketotifen eye drops",
+            "C": "Warm compresses",
+            "D": "Fluorometholone eye drops"
+        },
+        "response": {
+            "majority": {
+                "0.0": "To determine the most appropriate treatment for the patient described, we need to consider the symptoms and the likely diagnosis. The patient presents with itchy, watery eyes, sneezing, and a history of similar episodes during springtime, which suggests allergic conjunctivitis. \n\nNow, let's review the options:\n\n(A) Erythromycin ointment - This is an antibiotic used for bacterial conjunctivitis, which is not indicated here as the symptoms are more consistent with an allergic reaction.\n\n(B) Ketotifen eye drops - This is an antihistamine eye drop that is effective for allergic conjunctivitis and would help alleviate the patient's symptoms.\n\n(C) Warm compresses - While warm compresses can provide comfort, they do not address the underlying allergic reaction.\n\n(D) Fluorometholone eye drops - This is a corticosteroid that can reduce inflammation but is typically not the first-line treatment for allergic conjunctivitis due to potential side effects with prolonged use.\n\nBased on the majority opinion of the agents, the most appropriate treatment for this patient is:\n\nAnswer: B) Ketotifen eye drops"
+            }
+        },
+        "difficulty": "intermediate"
+    }
+]

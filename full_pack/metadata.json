@@ -1,0 +1,21 @@
+{
+  "source": "MedQA",
+  "n_benign": 400,
+  "n_compromised": 400,
+  "families_used": [
+    "json_plain",
+    "cdata_b64",
+    "token_game",
+    "zwj_split",
+    "rot13_b64",
+    "html_polyglot",
+    "xml_policy",
+    "tool_schema",
+    "recruiter",
+    "bidi_json",
+    "compliance_gate",
+    "alt_text"
+  ],
+  "seed": 42,
+  "model": "llama2"
+}

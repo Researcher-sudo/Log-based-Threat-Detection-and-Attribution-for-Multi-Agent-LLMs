@@ -1,0 +1,220 @@
+name: mdagents_benign_144222
+services:
+  cardiologist:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role cardiologist --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      ROLE_NAME: cardiologist
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/cardiologist
+        target: /logs
+        bind:
+          create_host_path: true
+  coordinator:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/coordinator.Dockerfile
+    environment:
+      AGENT_CMD: |
+        python3 /app/docker/feed_jsonl.py --sock /runs/agents/recruiter.sock --jsonl /app/full_pack/benign_preview.jsonl --wait 120
+      JSONL_FILE: /app/full_pack/benign_preview.jsonl
+      ROLE_NAME: coordinator
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/coordinator
+        target: /logs
+        bind:
+          create_host_path: true
+  medical_assistant:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role medical_assistant --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      ROLE_NAME: medical_assistant
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/medical_assistant
+        target: /logs
+        bind:
+          create_host_path: true
+  moderator:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role moderator --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      ROLE_NAME: moderator
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/moderator
+        target: /logs
+        bind:
+          create_host_path: true
+  pediatrician:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role pediatrician --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      ROLE_NAME: pediatrician
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/pediatrician
+        target: /logs
+        bind:
+          create_host_path: true
+  pulmonologist:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role pulmonologist --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      ROLE_NAME: pulmonologist
+      SOCK_ROOT: /runs/agents
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/pulmonologist
+        target: /logs
+        bind:
+          create_host_path: true
+  recruiter:
+    build:
+      context: /home/researchuser/Elnaz/Normal/MDAgents
+      dockerfile: docker/agent.Dockerfile
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      AGENT_CMD: |
+        python3 -u main.py --role recruiter --sock-root /runs/agents --model llama2-uncensored:georgesung/llama2_7b_chat_uncensored
+      AGENT_JSON_LOG: /logs/agent.jsonl
+      COLLECT_PCAP: "0"
+      HF_HOME: /runs/hf-cache
+      ROLE_NAME: recruiter
+      SOCK_ROOT: /runs/agents
+      TRANSFORMERS_CACHE: /runs/hf-cache
+    networks:
+      default: null
+    restart: unless-stopped
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign/agents/recruiter
+        target: /logs
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: mdagents_benign_144222_default
+x-agent-base:
+  build:
+    context: .
+    dockerfile: docker/agent.Dockerfile
+  cap_add:
+    - NET_ADMIN
+    - NET_RAW
+  restart: unless-stopped
+  security_opt:
+    - seccomp:unconfined
+  volumes:
+    - /home/researchuser/Elnaz/Normal/MDAgents/runs/20250819-144222-benign:/runs
+x-agent-env:
+  AGENT_JSON_LOG: /logs/agent.jsonl
+  SOCK_ROOT: /runs/agents
